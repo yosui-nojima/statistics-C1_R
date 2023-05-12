@@ -9,7 +9,7 @@
 - 無料で入手できる統計解析に特化したプログラミング言語で、統計解析で最も広く使われている。
 - 基本的な統計解析機能が標準パッケージに含まれており、初期状態で一通りの統計分析を行うことが可能。
 - 様々な分野に適した拡張パッケージが提供されており、適宜インストールして使用することが可能。
-- Rは、開発者のRoss Ihaka、Robert Clifford Gentlemanにより開発され、Rという名称は両者のイニシャルでもある。
+- Rは開発者のRoss Ihaka、Robert Clifford Gentlemanにより開発され、Rという名称は両者のイニシャルでもある。
 - 現在は、R Development Core Teamによってメンテナンス・拡張がされている。
 ## Rのインストール
 1. [https://www.r-project.org/](https://www.r-project.org/)をクリック。
