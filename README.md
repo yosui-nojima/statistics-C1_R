@@ -15,7 +15,7 @@
 1. [https://www.r-project.org/](https://www.r-project.org/)をクリック。
 
 2. 『download R』をクリック 
-<img width="1281" alt="スクリーンショット 2023-05-12 17 58 31" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/98ff8d0d-6ace-480b-87f3-12390f5956ec">
+<img width="1281" alt="スクリーンショット 2023-05-12 17 58 31" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/98ff8d0d-6ace-480b-87f3-12390f5956ec">　　
 
 3. 任意のミラーサイトのリンクをクリック
 <img width="1282" alt="スクリーンショット 2023-05-12 17 59 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/fe001245-d16e-4891-8843-e189ec59ae0f">
