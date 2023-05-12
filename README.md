@@ -58,8 +58,9 @@
 16. 『完了』をクリック。
 <img width="499" alt="スクリーンショット 2023-05-12 18 03 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/a17715e3-cb45-4241-a119-583d60efafce">
 
-17. 
+## RStudioについてインストール
+Rは単独で実行することも可能ですが、統合開発環境（Integrated Development Environment; IDE）というプログラムの記述や実行、デバックなどに必要なツールが一体化されているツールを利用して使用する方が便利です。\
+IDEとして、最も一般的なのが『**RStudio**』です。
 
-
-
-5. 
+## RStudioのインストール
+1. [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)をクリック。
