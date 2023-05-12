@@ -13,5 +13,12 @@
 - 現在は、R Development Core Teamによってメンテナンス・拡張がされている。
 ## Rのインストール
 1. [https://www.r-project.org/](https://www.r-project.org/)をクリック。
-2. a
-3. 
+
+
+
+2. 
+4. a
+
+
+
+5. 
