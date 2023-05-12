@@ -18,45 +18,45 @@
 <img width="1281" alt="スクリーンショット 2023-05-12 17 58 31" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/4aac52a6-1dbc-4b02-8017-1884b22075ee">
 
 3. 任意のミラーサイトのリンクをクリック
-<img width="1282" alt="スクリーンショット 2023-05-12 17 59 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/fe001245-d16e-4891-8843-e189ec59ae0f">
+<img width="1282" alt="スクリーンショット 2023-05-12 17 59 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/6ce700c8-3208-4ecf-9b9b-d554208ca33f">
 
 4. 『Download R for Windows』をクリック。※これまOSはWindowsの場合です。その他のOSの場合は、適切なリンクをクリック。
-<img width="1281" alt="スクリーンショット 2023-05-12 17 59 50" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/b697ec92-2e79-4f48-a596-51128e9c23a5">
+<img width="1281" alt="スクリーンショット 2023-05-12 17 59 50" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/45d7a416-d118-4976-a01d-28b364377207">
 
 5. 『install R for the first time』をクリック。
-<img width="1281" alt="スクリーンショット 2023-05-12 18 00 20" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/e473ef83-c4a9-4a10-8c66-c46a80ab2e59">
+<img width="1281" alt="スクリーンショット 2023-05-12 18 00 20" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/0664941a-2ba9-4336-88be-1f89fe75e0b6">
 
 6. 『Download R-4.3.0 for Windows』をクリック。
-<img width="1280" alt="スクリーンショット 2023-05-12 18 00 36" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/c2d3fa70-6719-4e6a-a736-7c5fa0843c7f">
+<img width="1280" alt="スクリーンショット 2023-05-12 18 00 36" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/115e9834-ed4e-40cf-8235-8c2f944805ec">
 
 7. ダウンロードフォルダにある『R-4.3.0-win.exe』をダブルクリック。
 
 8. 『はい』をクリック。
-<img width="456" alt="スクリーンショット 2023-05-12 18 01 16" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/b9a5bbcb-b00f-4ce0-beb8-f79c34aaf2c4">
+<img width="456" alt="スクリーンショット 2023-05-12 18 01 16" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/ce94e6cd-c523-469f-893a-fe8c88dc1383">
 
 9. 『日本語』が選択されていることを確認して、『OK』をクリック
-<img width="298" alt="スクリーンショット 2023-05-12 18 01 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/ea809e0c-60d7-4b1a-a5a3-d6435604d936">
+<img width="298" alt="スクリーンショット 2023-05-12 18 01 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/40b2ddeb-88ea-4c6e-85a6-15142f0427d3">
 
 10. 『次へ』をクリック。
-<img width="499" alt="スクリーンショット 2023-05-12 18 01 36" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/f6e429a9-9de3-4174-9135-1ef590579ed3">
+<img width="499" alt="スクリーンショット 2023-05-12 18 01 36" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/a2bf35e3-4e8d-455e-9362-e44937d6df86">
 
 11. 『次へ』をクリック。
-<img width="499" alt="スクリーンショット 2023-05-12 18 01 45" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/1f96df4d-f577-45e9-b3dd-1245fecfc90e">
+<img width="499" alt="スクリーンショット 2023-05-12 18 01 45" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/fe46d9ff-eec3-4809-9c09-b2e88f1951ba">
 
 12. ３つともチェックされていることを確認して、『次へ』をクリック。
-<img width="498" alt="スクリーンショット 2023-05-12 18 02 13" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/d2cb8733-7fd0-435d-addb-9d6ddc78ba44">
+<img width="498" alt="スクリーンショット 2023-05-12 18 02 13" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/0196f8d4-7821-4a74-82e9-29ea036092d2">
 
 13. 『いいえ』が選択されていることを確認して、『次へ』をクリック。
-<img width="498" alt="スクリーンショット 2023-05-12 18 02 25" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/c242ab9c-b886-4468-babd-7194eee9bc1a">
+<img width="498" alt="スクリーンショット 2023-05-12 18 02 25" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/22efda67-df58-44ab-8c1c-06297ece2f84">
 
 14. 『次へ』をクリック。
-<img width="498" alt="スクリーンショット 2023-05-12 18 02 35" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/9c8202e5-449f-417b-8228-66304d227395">
+<img width="498" alt="スクリーンショット 2023-05-12 18 02 35" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/321ecf1e-54fb-410e-935b-502fa433dd4f">
 
 15. 『次へ』をクリック。
-<img width="498" alt="スクリーンショット 2023-05-12 18 03 01" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/a01101c3-3c20-431b-8b88-a2118f91d33b">
+<img width="498" alt="スクリーンショット 2023-05-12 18 03 01" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/08a9de90-28c9-4666-9c71-5765772b4206">
 
 16. 『完了』をクリック。
-<img width="499" alt="スクリーンショット 2023-05-12 18 03 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/a17715e3-cb45-4241-a119-583d60efafce">
+<img width="499" alt="スクリーンショット 2023-05-12 18 03 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/d3a92ecd-fcae-4dcd-83d6-ca4f6d91e400">
 
 ## RStudioについてインストール
 Rは単独で実行することも可能ですが、統合開発環境（Integrated Development Environment; IDE）というプログラムの記述や実行、デバックなどに必要なツールが一体化されているツールを利用して使用する方が便利です。\
@@ -65,41 +65,41 @@ IDEとして、最も一般的なのが『**RStudio**』です。
 ## RStudioのインストール
 1. [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)をクリック。
 2. 『DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS』をクリック。
-<img width="1689" alt="スクリーンショット 2023-05-12 18 06 09" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/cbd65843-7320-4d42-9082-02a7effbe601">
+<img width="1689" alt="スクリーンショット 2023-05-12 18 06 09" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/1c73a85f-2e90-40d0-b688-72065f49efa7">
 
 3. ダウンロードフォルダにある『RStudio-2023.03.0-386.exe』をダブルクリック。
 
 4. 『はい』をクリック。
-<img width="459" alt="スクリーンショット 2023-05-12 18 06 32" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/acec8bde-146a-40a3-8e16-93021ab094d3">
+<img width="459" alt="スクリーンショット 2023-05-12 18 06 32" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/cdf85869-047e-4fd9-9b87-eb2fc029179b">
 
 5. 『次へ』をクリック。
-<img width="581" alt="スクリーンショット 2023-05-12 18 06 42" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/6f51eeda-5881-4ea5-87d1-51bcbf392049">
+<img width="581" alt="スクリーンショット 2023-05-12 18 06 42" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/a3cde434-c58c-4ae4-afc8-754d7290502e">
 
 6. 『次へ』をクリック。
-<img width="581" alt="スクリーンショット 2023-05-12 18 06 50" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/e23f8828-bbeb-4623-9c78-0530ca535bd6">
+<img width="581" alt="スクリーンショット 2023-05-12 18 06 50" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/b1b44146-1b25-4e86-af9b-4f1a639b6491">
 
 7. 『インストール』をクリック。
-<img width="581" alt="スクリーンショット 2023-05-12 18 07 01" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/aa33e51e-e412-47ef-ad3a-78568df05032">
+<img width="581" alt="スクリーンショット 2023-05-12 18 07 01" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/bc1da0ca-1556-4dc7-9c8c-7f934a81cf85">
 
 8. 『完了』をクリック。
-<img width="581" alt="スクリーンショット 2023-05-12 18 08 00" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/aba744d2-fca0-49a7-bb9d-500b71c79271">
+<img width="581" alt="スクリーンショット 2023-05-12 18 08 00" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/755296ff-0098-4aff-896a-fc539b1b8ae1">
 
 ## R、RStudioの起動
 1. デスクトップの左下にある検索窓に「**rstudio**」と入力。
-<img width="833" alt="スクリーンショット 2023-05-12 19 26 40" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/144cd66e-19ff-4e86-8ec0-c7e09629a2eb">
+<img width="833" alt="スクリーンショット 2023-05-12 19 26 40" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/ee077434-7271-4371-a408-b92b6aeb964f">
 
 2. 『タスクバーにピン留めする』をクリック。
-<img width="832" alt="スクリーンショット 2023-05-12 18 09 08" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/3c28c517-5824-4305-b687-38d5473e774d">
+<img width="832" alt="スクリーンショット 2023-05-12 18 09 08" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/bb2fbd8b-49a8-46a0-af8b-8fa4731ef73b">
 
 3. 『開く』をクリック。
-<img width="833" alt="スクリーンショット 2023-05-12 18 09 19" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/4920043f-4d37-4f34-9e48-8e6057679cfd">
+<img width="833" alt="スクリーンショット 2023-05-12 18 09 19" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/8c237bbe-a88b-4bce-917d-be5648e3ec80">
 
 4. 『Use your machine's default 64-bit version of R』が選択されていることを確認して、『OK』をクリック。
-<img width="390" alt="スクリーンショット 2023-05-12 18 09 33" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/32f428a1-6d00-4bd1-90b9-9e98f2e01f40">
+<img width="390" alt="スクリーンショット 2023-05-12 18 09 33" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/837e2729-a6c3-4b53-b57e-c04035d1442a">
 
 5. クラッシュレポートを提供するかどうかを聞いています。『はい』でも『いいえ』でもどちらでもかまいません。
-<img width="558" alt="スクリーンショット 2023-05-12 18 10 03" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/31644000-459e-45b5-91ff-06d194ac3dde">
+<img width="558" alt="スクリーンショット 2023-05-12 18 10 03" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/9594333a-d3a3-4783-a104-a90c4be3d925">
 
 6. 以下の画面が表示されればインストール成功です。
-<img width="1186" alt="スクリーンショット 2023-05-12 18 10 25" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/44fe9f84-12da-406c-ba39-f9a3a5e7d7de">
+<img width="1186" alt="スクリーンショット 2023-05-12 18 10 25" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/c45549af-ddb6-42ac-93ab-083ce71c7434">
 
