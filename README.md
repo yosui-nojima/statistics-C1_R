@@ -85,7 +85,7 @@ IDEとして、最も一般的なのが『**RStudio**』です。
 <img width="581" alt="スクリーンショット 2023-05-12 18 08 00" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/aba744d2-fca0-49a7-bb9d-500b71c79271">
 
 ## R、RStudioの起動
-1. デスクトップの左下にある検索窓に「**Rstudio**」と入力。
+1. デスクトップの左下にある検索窓に「**rstudio**」と入力。
 <img width="833" alt="スクリーンショット 2023-05-12 19 26 40" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/144cd66e-19ff-4e86-8ec0-c7e09629a2eb">
 
 2. 『タスクバーにピン留めする』をクリック。
