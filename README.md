@@ -13,11 +13,10 @@
 - 現在は、R Development Core Teamによってメンテナンス・拡張がされている。
 ## Rのインストール
 1. [https://www.r-project.org/](https://www.r-project.org/)をクリック。
+<img width="1190" alt="スクリーンショット 2023-05-12 17.58.31" src="https://github.com/yosui-nojima/statistics-C1_R/blob/a910630e9179f5a463e3b798742a5cca9d354039/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-05-12%2017.58.31.png">
 
-
-
-2. 
-4. a
+2. 『download R』をクリック 
+4. 
 
 
 
