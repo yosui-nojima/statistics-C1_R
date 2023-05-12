@@ -12,5 +12,6 @@
 - Rは、開発者のRoss Ihaka、Robert Clifford Gentlemanにより開発され、Rという名称は両者のイニシャルでもある。
 - 現在は、R Development Core Teamによってメンテナンス・拡張がされている。
 ## Rのインストール
-1.
-2.
+1. https://www.r-project.org/
+2. a
+3. 
