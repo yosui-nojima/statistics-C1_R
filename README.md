@@ -64,3 +64,42 @@ IDEとして、最も一般的なのが『**RStudio**』です。
 
 ## RStudioのインストール
 1. [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)をクリック。
+2. 『DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS』をクリック。
+<img width="1689" alt="スクリーンショット 2023-05-12 18 06 09" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/cbd65843-7320-4d42-9082-02a7effbe601">
+
+3. ダウンロードフォルダにある『RStudio-2023.03.0-386.exe』をダブルクリック。
+
+4. 『はい』をクリック。
+<img width="459" alt="スクリーンショット 2023-05-12 18 06 32" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/acec8bde-146a-40a3-8e16-93021ab094d3">
+
+5. 『次へ』をクリック。
+<img width="581" alt="スクリーンショット 2023-05-12 18 06 42" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/6f51eeda-5881-4ea5-87d1-51bcbf392049">
+
+6. 『次へ』をクリック。
+<img width="581" alt="スクリーンショット 2023-05-12 18 06 50" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/e23f8828-bbeb-4623-9c78-0530ca535bd6">
+
+7. 『インストール』をクリック。
+<img width="581" alt="スクリーンショット 2023-05-12 18 07 01" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/aa33e51e-e412-47ef-ad3a-78568df05032">
+
+8. 『完了』をクリック。
+<img width="581" alt="スクリーンショット 2023-05-12 18 08 00" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/aba744d2-fca0-49a7-bb9d-500b71c79271">
+
+## R、RStudioの起動
+1. デスクトップの左下にある検索窓に「**Rstudio**」と入力。
+<img width="833" alt="スクリーンショット 2023-05-12 19 26 40" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/144cd66e-19ff-4e86-8ec0-c7e09629a2eb">
+
+2. 『タスクバーにピン留めする』をクリック。
+<img width="832" alt="スクリーンショット 2023-05-12 18 09 08" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/3c28c517-5824-4305-b687-38d5473e774d">
+
+3. 『開く』をクリック。
+<img width="833" alt="スクリーンショット 2023-05-12 18 09 19" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/4920043f-4d37-4f34-9e48-8e6057679cfd">
+
+4. 『Use your machine's default 64-bit version of R』が選択されていることを確認して、『OK』をクリック。
+<img width="390" alt="スクリーンショット 2023-05-12 18 09 33" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/32f428a1-6d00-4bd1-90b9-9e98f2e01f40">
+
+5. クラッシュレポートを提供するかどうかを聞いています。『はい』でも『いいえ』でもどちらでもかまいません。
+<img width="558" alt="スクリーンショット 2023-05-12 18 10 03" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/31644000-459e-45b5-91ff-06d194ac3dde">
+
+6. 以下の画面が表示されればインストール成功です。
+<img width="1186" alt="スクリーンショット 2023-05-12 18 10 25" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/44fe9f84-12da-406c-ba39-f9a3a5e7d7de">
+
