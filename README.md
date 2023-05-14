@@ -20,7 +20,7 @@
 3. 任意のミラーサイトのリンクをクリック
 <img width="1282" alt="スクリーンショット 2023-05-12 17 59 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/6ce700c8-3208-4ecf-9b9b-d554208ca33f">
 
-4. 『Download R for Windows』をクリック。※これまOSはWindowsの場合です。その他のOSの場合は、適切なリンクをクリック。
+4. 『Download R for Windows』をクリック。※OSがWindowsの場合です。その他のOSの場合は、適切なリンクをクリック。
 <img width="1281" alt="スクリーンショット 2023-05-12 17 59 50" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/45d7a416-d118-4976-a01d-28b364377207">
 
 5. 『install R for the first time』をクリック。
@@ -97,7 +97,7 @@ IDEとして、最も一般的なのが『**RStudio**』です。
 4. 『Use your machine's default 64-bit version of R』が選択されていることを確認して、『OK』をクリック。
 <img width="390" alt="スクリーンショット 2023-05-12 18 09 33" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/837e2729-a6c3-4b53-b57e-c04035d1442a">
 
-5. クラッシュレポートを提供するかどうかを聞いています。『はい』でも『いいえ』でもどちらでもかまいません。
+5. クラッシュレポートを提供するかどうかを聞いています。どちらでもかまいません。
 <img width="558" alt="スクリーンショット 2023-05-12 18 10 03" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/9594333a-d3a3-4783-a104-a90c4be3d925">
 
 6. 以下の画面が表示されればインストール成功です。
