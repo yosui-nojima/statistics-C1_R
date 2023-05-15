@@ -86,7 +86,7 @@ IDEとして、最も一般的なのが『**RStudio**』です。
 8. 『完了』をクリック。
 <img width="581" alt="スクリーンショット 2023-05-12 18 08 00" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/755296ff-0098-4aff-896a-fc539b1b8ae1">
 
-## 6. R、RStudioの起動
+## 6. RStudioによるRの起動
 1. デスクトップの左下にある検索窓に「**rstudio**」と入力。
 <img width="833" alt="スクリーンショット 2023-05-12 19 26 40" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/ee077434-7271-4371-a408-b92b6aeb964f">
 
