@@ -59,11 +59,11 @@
 16. 『完了』をクリック。
 <img width="499" alt="スクリーンショット 2023-05-12 18 03 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/d3a92ecd-fcae-4dcd-83d6-ca4f6d91e400">
 
-## RStudioについてインストール
+## ４．RStudioについて
 Rは単独で実行することも可能ですが、統合開発環境（Integrated Development Environment; IDE）というプログラムの記述や実行、デバックなどに必要なツールが一体化されているツールを利用して使用する方が便利です。\
 IDEとして、最も一般的なのが『**RStudio**』です。
 
-## RStudioのインストール
+## ５．RStudioのインストール
 1. [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)をクリック。
 2. 『DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS』をクリック。
 <img width="1689" alt="スクリーンショット 2023-05-12 18 06 09" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/1c73a85f-2e90-40d0-b688-72065f49efa7">
@@ -85,7 +85,7 @@ IDEとして、最も一般的なのが『**RStudio**』です。
 8. 『完了』をクリック。
 <img width="581" alt="スクリーンショット 2023-05-12 18 08 00" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/755296ff-0098-4aff-896a-fc539b1b8ae1">
 
-## ４．R、RStudioの起動
+## ６．R、RStudioの起動
 1. デスクトップの左下にある検索窓に「**rstudio**」と入力。
 <img width="833" alt="スクリーンショット 2023-05-12 19 26 40" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/ee077434-7271-4371-a408-b92b6aeb964f">
 
@@ -104,12 +104,12 @@ IDEとして、最も一般的なのが『**RStudio**』です。
 6. 以下の画面が表示されればインストール成功。
 <img width="1186" alt="スクリーンショット 2023-05-12 18 10 25" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/c45549af-ddb6-42ac-93ab-083ce71c7434">
 
-## ５．R実行の準備
+## ７．R実行の準備
 『Console』に直接入力して実行してもかまわないが、スクリプトとして記録・保存できないため、\
 タブから、File → New File → R Scriptを選択し、クリック。\
 『Console』の上に、『Untitled1』という画面が表示される。ここに下記の**Rの文法**のコードを入力すること。
 
-## ６．Rの文法
+## ８．Rの文法
 一行ずつ実行すること。\
 行の説明やコメントを入れる際は、『#』を使う。実行する際、『#』以降は無視される。
 ```
