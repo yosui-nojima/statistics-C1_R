@@ -274,6 +274,22 @@ hist(x = num, breaks = 100)
 - hist; ヒストグラムを出力する関数
   - x; ベクトルを指定
   - breaks; 階級の数を指定
+### 標準正規分布に従う母集団からn=3, 4, 8, 32の標本をm回抽出したときの標本不偏分散を確認する。
+```
+data <- matrix(nrow = 1000, ncol = 4) #空の行列を生成
+for (x in 1:1000) { #標本不偏分散を出力 #mの範囲（m==1,2,3,,,1000)を指定
+  data[x,1] <- var(sample(num, 3*x, replace=F)) #n=3のときの標本不偏分散を計算
+  data[x,2] <- var(sample(num, 4*x, replace=F)) #n=4のときの標本不偏分散を計算
+  data[x,3] <- var(sample(num, 8*x, replace=F)) #n=8のときの標本不偏分散を計算
+  data[x,4] <- var(sample(num, 32*x, replace=F))  #n=32のときの標本不偏分散を計算
+}
+colnames(data) <- c("n3", "n4", "n8", "n32") #列名を定義
+data.m <- melt(data) #行列をデータを加工
+colnames(data.m) <- c("M", "n", "S^2") #列名を定義
+ggplot(data.m, aes(x = M, y = `S^2`, color = n)) + geom_line() + ylim(0, 2) +
+  theme(panel.background = element_blank(), axis.line=element_line(colour = "black"), panel.grid = element_line(colour = "gray")) +
+  theme(axis.text.x = element_text(colour = "black", size = 30), axis.title.y = element_text(size = 30, colour = "black"), axis.title.x = element_text(size = 30, colour = "black"), axis.text.y = element_text(size = 30, color = "black"), legend.text = element_text(size = 30, color = "black"), legend.title = element_text(size = 30, color = "black"))
+```
 
 ## 仮想データを使った解析
 [e-Stat](https://www.e-stat.go.jp/)は、各府省が公表する統計データを一つにまとめ、統計データの検索をはじめとした、さまざまな機能を備えた政府統計のポータルサイト。\
