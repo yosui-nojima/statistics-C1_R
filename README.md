@@ -445,3 +445,4 @@ for (g in 1:nrow(res)) {
 }
 table(res$include) #TRUE（推定した区間内に母平均が含まれる場合）とFALSE（推定した区間内に母平均が含まれない場合）の数を確認
 ```
+- qnorm; 
