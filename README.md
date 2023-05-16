@@ -298,12 +298,12 @@ for (x in 1:1000) { #標本不偏分散を出力 #mの範囲（m==1,2,3,,,1000)�
   data[x,1] <- var(sample(x = num, size = 3*x))*((3-1)/3) #n=3のときの標本分散を計算
   data[x,2] <- var(sample(x = num, size = 4*x))*((4-1)/4) #n=4のときの標本分散を計算
   data[x,3] <- var(sample(x = num, size = 8*x))*((8-1)/8) #n=8のときの標本分散を計算
-  data[x,4] <- var(sample(x = num, size = 32x))*((32-1)/32)  #n=32のときの標本分散を計算
+  data[x,4] <- var(sample(x = num, size = 32*x))*((32-1)/32)  #n=32のときの標本分散を計算
 }
 colnames(data) <- c("n3", "n4", "n8", "n32") #列名を定義
 data.m <- melt(data) #行列をデータを加工
-colnames(data.m) <- c("M", "n", "S^2") #列名を定義
-ggplot(data.m, aes(x = M, y = `S^2`, color = n)) + geom_line() + ylim(0, 2) +
+colnames(data.m) <- c("M", "n", "S'^2") #列名を定義
+ggplot(data.m, aes(x = M, y = `S'^2`, color = n)) + geom_line() + ylim(0, 2) +
   theme(panel.background = element_blank(), axis.line=element_line(colour = "black"), panel.grid = element_line(colour = "gray")) +
   theme(axis.text.x = element_text(colour = "black", size = 30), axis.title.y = element_text(size = 30, colour = "black"), axis.title.x = element_text(size = 30, colour = "black"), axis.text.y = element_text(size = 30, color = "black"), legend.text = element_text(size = 30, color = "black"), legend.title = element_text(size = 30, color = "black"))
 ```
