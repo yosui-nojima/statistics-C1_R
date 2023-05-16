@@ -211,3 +211,11 @@ Nums[2, ]    #row 2, すべてのcolumns
 class(Nums)  #型の確認
 str(Nums)
 ```
+### forループ（一定範囲内での繰り返し操作）
+```
+data <- matrix(nrow = 10, ncol = 1)
+for (x in 1:10) {
+  data[x,] <- x + 1
+}
+data
+```
