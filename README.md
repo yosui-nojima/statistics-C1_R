@@ -405,6 +405,8 @@ set.seed(xxx)  #乱数を指定（xxxの箇所に学籍番号の下３桁の値�
 popu <- rnorm(100000, mean = 170.7, sd = 5.97) #rnorm : Normal Disribution(正規分布)を作成するコマンド。平均170.7、標準偏差5.97になるように100000人分のデータを正規分布に従うように生成。
 hist(x = popu, breaks=100)
 ```
+### 標本抽出
+n=100の標本を100回抽出する。
 ```
 n <- 100
 res <- matrix(NA, nrow = n, ncol = 1000)
@@ -412,18 +414,11 @@ for (i in 1:1000) {
   res[, i] <- sample(popu, size = n)
 }
 ```
-### 標本抽出
-n=100の標本を100回抽出する。
+### 抽出した標本それぞれについて区間推定する
 ```
-n <- 100 #標本の大きさnの指定
-res <- matrix(nrow = n, ncol = 100) #100行✕100列の空の行列を生成
-for (i in 1:100) {
-  res[i,] <- sample(popu, size = n) 標本を100回抽出
-}
-
 res <- data.frame(res) #オブジェクトの型をマトリクスからデータフレームに変更
-res$CI_lower <- NA #最終列にCI_lowerという名前の空の列を新たに作成（推定する区間の下側）
-res$CI_upper <- NA #最終列にCI_upperという名前の空の列を新たに作成（推定する区間の上側）
+res$CI_lower <- NA #最終列にCI_lowerという名前の空の列を新たに作成（推定する区間の下側を格納する列）
+res$CI_upper <- NA #最終列にCI_upperという名前の空の列を新たに作成（推定する区間の上側を格納する列）
 
 for (y in 1:nrow(res)) {
   res$CI_lower[y] <- mean(as.matrix(res[y,1:100])) - qnorm(mean = 0, sd = 1, lower.tail = F, p = 0.025)*(5.97/sqrt(ncol(res[y,1:100]))) #推定する区間の下側を計算
@@ -433,10 +428,10 @@ for (y in 1:nrow(res)) {
 res$include <- NA #最終列にincludeという名前の空の列を新たに作成（母平均が推定した区間に含まれるかどうかの判定結果を格納する列
 for (g in 1:nrow(res)) {
   if (res$CI_lower[g] < 170.7 & 170.7 < res$CI_upper[g]) {
-    res$include[g] <- TRUE
+    res$include[g] <- TRUE #if文でTRUE（推定した区間内に母平均が含まれる）だった場合に実行される部分
   } else {
-    res$include[g] <- FALSE
+    res$include[g] <- FALSE  #if文でFALSE（推定した区間内に母平均が含まれない）だった場合に実行される部分
   }
 }
-table(res$include)
+table(res$include) #TRUE（推定した区間内に母平均が含まれる場合）とFALSE（推定した区間内に母平均が含まれない場合）の数を確認
 ```
