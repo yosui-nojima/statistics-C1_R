@@ -143,6 +143,57 @@ a <- c(1,2,3)   #スペースはなくてもよい
 
 sum(a)          #ベクトルの要素の和
 ```
+### 論理
+```
+bool <- c(TRUE, FALSE, F, T)    #論理値
+bool                            #TはTRUEの略、FはFALSEの略
+sum(bool)                       #T/Fは1/0として扱われる
 
+"pen" == "pen"     #比較演算（同じ）
+"pen" == "apple"
+"pen" != "apple"   #比較演算（異なる）
+"pen" != "pen"
 
+1 < 2              #比較演算（より小さい）
+1 >= 2             #比較演算（より大きいか同じ）
+
+is_apple <- fr1 == "apple"       #比較演算の結果を格納
+is_apple
+
+is_apple <- fruites == "apple"   #比較演算の結果を格納
+is_apple
+```
+### 型
+```
+class(a)         #オブジェクトの型を表示する
+class(fr1)
+class(fruites)
+class(is_apple)
+str(a)           #型と構造、内容の一部を表示する
+str(fr1)
+str(fruites)
+str(is_apple)
+```
+### ベクトルの要素を取り出す
+```
+Nums <- seq(4, 62, 2)   #4から62まで間隔が2の数列を作成
+Nums
+str(Nums)
+
+head(Nums)     #最初の6つ
+head(Nums, 8)  #最初の8つ
+tail(Nums, 8)  #最後の8つ
+
+Nums[3]      #3つめの要素
+Nums[2:5]    #2つめから5つめまでの要素
+Nums[-3]     #3つめ以外の要素
+```
+### 要素の追加
+```
+Nums <- append(Nums, 64)          #最後に要素を追加
+Nums
+
+Nums <- append(Nums, 2, after=0)  #先頭に追加
+Nums                              #'after'で位置を指定
+```
 
