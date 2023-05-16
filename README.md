@@ -275,7 +275,7 @@ hist(x = num, breaks = 100)
   - x; ベクトルを指定
   - breaks; 階級の数を指定
 ### 標準正規分布に従う母集団からn=3, 4, 8, 32の標本をm回抽出したときの標本不偏分散と標本分散を確認する
-#### 標本不偏分散を確認する
+#### a. 標本不偏分散を確認する
 ```
 data <- matrix(nrow = 1000, ncol = 4) #空の行列を生成
 for (x in 1:1000) { #標本不偏分散を出力 #mの範囲（m==1,2,3,,,1000)を指定
@@ -291,7 +291,7 @@ ggplot(data.m, aes(x = M, y = `S^2`, color = n)) + geom_line() + ylim(0, 2) +
   theme(panel.background = element_blank(), axis.line=element_line(colour = "black"), panel.grid = element_line(colour = "gray")) +
   theme(axis.text.x = element_text(colour = "black", size = 30), axis.title.y = element_text(size = 30, colour = "black"), axis.title.x = element_text(size = 30, colour = "black"), axis.text.y = element_text(size = 30, color = "black"), legend.text = element_text(size = 30, color = "black"), legend.title = element_text(size = 30, color = "black"))
 ```
-#### 標本分散を確認する
+#### b. 標本分散を確認する
 ```
 data <- matrix(nrow = 1000, ncol = 4) #空の行列を生成
 for (x in 1:1000) { #標本不偏分散を出力 #mの範囲（m==1,2,3,,,1000)を指定
@@ -320,9 +320,9 @@ ggplot(data.m, aes(x = M, y = `S'^2`, color = n)) + geom_line() + ylim(0, 2) +
 m <- 1 #サイコロの個数
 deme <- c(1, 2, 3, 4, 5, 6) #サイコロの出目を指定（今回は通常の6面体サイコロ）
 deme.rep <- rep(deme, m) #```deme```ベクトルの要素をm回繰り返す
-all <- combn(x=deme.rep, m=m) #全組み合わせを出力
-all <- t(all) #転置
-all <- unique(all) #重複を除去
+all <- combn(x=deme.rep, m=m) #nCrで計算される全ての組み合わせを出力
+all <- t(all) #転置（unique関数は）
+all <- unique(all) #重複を除去（combn関数はベクトル内の要素は全て独立とみなすため、重複を除く）
 all <- t(all) #転置
 
 mean <- colMeans(all) #各組み合わせの平均値を算出
