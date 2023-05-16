@@ -274,14 +274,31 @@ hist(x = num, breaks = 100)
 - hist; ヒストグラムを出力する関数
   - x; ベクトルを指定
   - breaks; 階級の数を指定
-### 標準正規分布に従う母集団からn=3, 4, 8, 32の標本をm回抽出したときの標本不偏分散を確認する。
+### 標準正規分布に従う母集団からn=3, 4, 8, 32の標本をm回抽出したときの標本不偏分散と標本分散を確認する
+#### 標本不偏分散を確認する
 ```
 data <- matrix(nrow = 1000, ncol = 4) #空の行列を生成
 for (x in 1:1000) { #標本不偏分散を出力 #mの範囲（m==1,2,3,,,1000)を指定
-  data[x,1] <- var(sample(num, 3*x, replace=F)) #n=3のときの標本不偏分散を計算
-  data[x,2] <- var(sample(num, 4*x, replace=F)) #n=4のときの標本不偏分散を計算
-  data[x,3] <- var(sample(num, 8*x, replace=F)) #n=8のときの標本不偏分散を計算
-  data[x,4] <- var(sample(num, 32*x, replace=F))  #n=32のときの標本不偏分散を計算
+  data[x,1] <- var(sample(x = num, size = 3*x)) #n=3のときの標本不偏分散を計算
+  data[x,2] <- var(sample(x = num, size = 4*x)) #n=4のときの標本不偏分散を計算
+  data[x,3] <- var(sample(x = num, size = 8*x)) #n=8のときの標本不偏分散を計算
+  data[x,4] <- var(sample(x = num, size = 32x))  #n=32のときの標本不偏分散を計算
+}
+colnames(data) <- c("n3", "n4", "n8", "n32") #列名を定義
+data.m <- melt(data) #行列をデータを加工
+colnames(data.m) <- c("M", "n", "S^2") #列名を定義
+ggplot(data.m, aes(x = M, y = `S^2`, color = n)) + geom_line() + ylim(0, 2) +
+  theme(panel.background = element_blank(), axis.line=element_line(colour = "black"), panel.grid = element_line(colour = "gray")) +
+  theme(axis.text.x = element_text(colour = "black", size = 30), axis.title.y = element_text(size = 30, colour = "black"), axis.title.x = element_text(size = 30, colour = "black"), axis.text.y = element_text(size = 30, color = "black"), legend.text = element_text(size = 30, color = "black"), legend.title = element_text(size = 30, color = "black"))
+```
+#### 標本分散を確認する
+```
+data <- matrix(nrow = 1000, ncol = 4) #空の行列を生成
+for (x in 1:1000) { #標本不偏分散を出力 #mの範囲（m==1,2,3,,,1000)を指定
+  data[x,1] <- var(sample(x = num, size = 3*x))*((3-1)/3) #n=3のときの標本分散を計算
+  data[x,2] <- var(sample(x = num, size = 4*x))*((4-1)/4) #n=4のときの標本分散を計算
+  data[x,3] <- var(sample(x = num, size = 8*x))*((8-1)/8) #n=8のときの標本分散を計算
+  data[x,4] <- var(sample(x = num, size = 32x))*((32-1)/32)  #n=32のときの標本分散を計算
 }
 colnames(data) <- c("n3", "n4", "n8", "n32") #列名を定義
 data.m <- melt(data) #行列をデータを加工
@@ -291,6 +308,35 @@ ggplot(data.m, aes(x = M, y = `S^2`, color = n)) + geom_line() + ylim(0, 2) +
   theme(axis.text.x = element_text(colour = "black", size = 30), axis.title.y = element_text(size = 30, colour = "black"), axis.title.x = element_text(size = 30, colour = "black"), axis.text.y = element_text(size = 30, color = "black"), legend.text = element_text(size = 30, color = "black"), legend.title = element_text(size = 30, color = "black"))
 ```
 
+- sample; 母集団から単純無作為抽出法により標本を抽出
+  - x; ベクトルを指定
+  - size; 標本の大きさを指定
+- colnames; 列名を出力
+- melt; データを可視化するためのデータ加工\
+※ggplotによる可視化のコードは、現時点で理解する必要はありません。
+
+### 中心極限定理を確認する
+```
+m <- 1 #サイコロの個数
+deme <- c(1, 2, 3, 4, 5, 6) #サイコロの出目を指定（今回は通常の6面体サイコロ）
+deme.rep <- rep(deme, m) #```deme```ベクトルの要素をm回繰り返す
+all <- combn(x=deme.rep, m=m) #全組み合わせを出力
+all <- t(all) #転置
+all <- unique(all) #重複を除去
+all <- t(all) #転置
+
+mean <- colMeans(all) #各組み合わせの平均値を算出
+mean.d <- data.frame(table(round(mean, digits = 2))) #各平均値の度数を算出
+mean.d$Probability <- NA #各平均値の確率を出力する列を生成
+colnames(mean.d)[1] <- "Mean" #平均値の行名を指定
+for (x in 1:nrow(mean.d)) { #forループ
+  mean.d$Probability[x] <- mean.d$Freq[x] / sum(mean.d$Freq) #各度数と度数の合計から確率を算出
+}
+#プロット
+ggplot(mean.d, aes(x = Mean, y = Probability)) +
+  geom_point(size = 3) + 
+  geom_col(aes(x=Mean), width = 0.01, color = "black")
+```
 ## 仮想データを使った解析
 [e-Stat](https://www.e-stat.go.jp/)は、各府省が公表する統計データを一つにまとめ、統計データの検索をはじめとした、さまざまな機能を備えた政府統計のポータルサイト。\
 このデータベースから、学校保健統計調査（小・中・高の生徒の身長・体重などのデータ）のうち、大阪府在住17歳男性の身長の平均・標準偏差（令和3年度集計）を[参考](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032258889&fileKind=0)に仮想データを生成する。
