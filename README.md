@@ -321,22 +321,35 @@ m <- 1 #サイコロの個数
 deme <- c(1, 2, 3, 4, 5, 6) #サイコロの出目を指定（今回は通常の6面体サイコロ）
 deme.rep <- rep(deme, m) #```deme```ベクトルの要素をm回繰り返す
 all <- combn(x=deme.rep, m=m) #nCrで計算される全ての組み合わせを出力
-all <- t(all) #転置（unique関数は）
+all <- t(all) #転置（```unique```関数は行方向についての重複を除去するため、```unique```を実行する前に```t()```で転置する）
 all <- unique(all) #重複を除去（combn関数はベクトル内の要素は全て独立とみなすため、重複を除く）
-all <- t(all) #転置
+all <- t(all) #転置（重複を除去したので、再度転置しても元に戻す）
 
-mean <- colMeans(all) #各組み合わせの平均値を算出
+mean <- colMeans(all) #列方向について平均値を算出（各組み合わせの平均値を算出）
 mean.d <- data.frame(table(round(mean, digits = 2))) #各平均値の度数を算出
-mean.d$Probability <- NA #各平均値の確率を出力する列を生成
-colnames(mean.d)[1] <- "Mean" #平均値の行名を指定
-for (x in 1:nrow(mean.d)) { #forループ
-  mean.d$Probability[x] <- mean.d$Freq[x] / sum(mean.d$Freq) #各度数と度数の合計から確率を算出
+mean.d$Probability <- NA #各平均値の確率を格納するための空の列を生成。列名を```Probability```とする。
+colnames(mean.d)[1] <- "Mean" #平均値の列に```Mean```という列名を指定
+for (x in 1:nrow(mean.d)) { #forループ（```nrow```は行数を出力する関数。```1:nrow```で1から```mean.d```の行数までループを続ける）
+  mean.d$Probability[x] <- mean.d$Freq[x] / sum(mean.d$Freq) #各度数と度数の総数から確率を算出
 }
 #プロット
 ggplot(mean.d, aes(x = Mean, y = Probability)) +
   geom_point(size = 3) + 
   geom_col(aes(x=Mean), width = 0.01, color = "black")
 ```
+- rep; ```x =　```で指定したベクトルを指定した回数繰り返す
+  - x; ベクトルを指定
+- combn; #nCrで計算される全ての組み合わせを出力
+- t; 転置
+- unique; 行方向について重複を除去
+- colMeans; 列方向について平均値を算出
+- data.frame; オブジェクトの型をデータフレームにする
+- table; 度数を出力
+- round; 指定した桁数を四捨五入した値を返す
+  - digits; 小数点第何位まで表示させるか指定。四捨五入して出力。
+- colnames; 列名を出力
+※ggplotによる可視化のコードは、現時点で理解する必要はありません。
+
 ## 仮想データを使った解析
 [e-Stat](https://www.e-stat.go.jp/)は、各府省が公表する統計データを一つにまとめ、統計データの検索をはじめとした、さまざまな機能を備えた政府統計のポータルサイト。\
 このデータベースから、学校保健統計調査（小・中・高の生徒の身長・体重などのデータ）のうち、大阪府在住17歳男性の身長の平均・標準偏差（令和3年度集計）を[参考](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032258889&fileKind=0)に仮想データを生成する。
