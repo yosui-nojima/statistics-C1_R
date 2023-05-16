@@ -338,7 +338,7 @@ ggplot(mean.d, aes(x = Mean, y = Probability)) +
   geom_point(size = 3) + 
   geom_col(aes(x=Mean), width = 0.01, color = "black")
 ```
-- rep; ```x =　```で指定したベクトルを指定した回数繰り返す
+- rep; ```x =```で指定したベクトルを指定した回数繰り返す
   - x; ベクトルを指定
 - combn; #nCrで計算される全ての組み合わせを出力
 - t; 転置
