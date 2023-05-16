@@ -188,7 +188,7 @@ is_apple
 is_apple <- fruites == "apple"   #比較演算の結果を格納
 is_apple
 ```
-### 型
+### オブジェクトの型の確認
 ```
 class(a)         #オブジェクトの型を表示する
 class(fr1)
