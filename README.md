@@ -363,3 +363,10 @@ set.seed(xxx)  #乱数を指定（xxxの箇所に学籍番号の下３桁の値�
 popu <- rnorm(100000, mean = 170.7, sd = 5.97) #rnorm : Normal Disribution(正規分布)を作成するコマンド。平均170.7、標準偏差5.97になるように100000人分のデータを正規分布に従うように生成。
 hist(x = popu, breaks=100)
 ```
+```
+n <- 100
+res <- matrix(NA, nrow = n, ncol = 1000)
+for (i in 1:1000) {
+  res[, i] <- sample(popu, size = n)
+}
+```
