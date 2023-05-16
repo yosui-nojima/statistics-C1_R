@@ -196,4 +196,18 @@ Nums
 Nums <- append(Nums, 2, after=0)  #先頭に追加
 Nums                              #'after'で位置を指定
 ```
+### マトリクス（行列）
+```
+Nums <- matrix(Nums, 8, 4)   #Numsを8×4の行列に変換
+Nums
+```
+### row（行）とcolumn（列）の指定
+```
+Nums[1, 2]   #row 1, column 2
+Nums[2, 1]   #row 2, column 1
+Nums[, 2]    #すべてのrow, column 2
+Nums[2, ]    #row 2, すべてのcolumns
 
+class(Nums)  #型の確認
+str(Nums)
+```
