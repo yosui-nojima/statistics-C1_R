@@ -245,6 +245,36 @@ for (x in 1:10) {
 }
 data #結果の表示
 ```
+### if条件分岐
+1と3でどちらが値として大きいかを判定。
+条件文が正しい場合、```TRUE```と判定され、下記で２行目に指定したコードが実行される。
+```
+if (1<3) {
+  print("Correct") #if文でTRUEだった場合に実行される部分
+} else {
+  print("Incorrect") #if文でTRUEだった場合に実行される部分
+}
+```
+
+```
+if (1>3) {
+  print("Correct") #if文でTRUEだった場合に実行される部分
+} else {
+  print("Incorrect") #if文でTRUEだった場合に実行される部分
+}
+```
+```
+a <- matrix(nrow = 10, ncol = 2)
+a[,1] <- seq(1, 10, 1)
+for (x in 1:10) {
+  if (a[x,1] < 5) {
+    a[x,2] <- TRUE #if文でTRUEだった場合に実行される部分
+  } else {
+    a[x,2] <- FALSE #if文でFALSEだった場合に実行される部分
+  }
+}
+```
+
 ## パッケージのインストールと読み込み
 下記コードには、Rにデフォルトでインストールされている関数には含まれていない関数を必要とするため、下記で追加インストールする。
 複数の関数が１つのパッケージとして公開されている。パッケージ単位でインストールする。
@@ -294,7 +324,7 @@ ggplot(data.m, aes(x = M, y = `S^2`, color = n)) + geom_line() + ylim(0, 2) +
 ```
 #### b. 標本分散を確認する
 ```
-data <- matrix(nrow = 1000, ncol = 4) #空の行列を生成
+data <- matrix(nrow = 1000, ncol = 4) #1000行✕4列の空の行列を生成
 for (x in 1:1000) { #標本不偏分散を出力 #mの範囲（m==1,2,3,,,1000)を指定
   data[x,1] <- var(sample(x = num, size = 3*x))*((3-1)/3) #n=3のときの標本分散を計算
   data[x,2] <- var(sample(x = num, size = 4*x))*((4-1)/4) #n=4のときの標本分散を計算
@@ -369,4 +399,32 @@ res <- matrix(NA, nrow = n, ncol = 1000)
 for (i in 1:1000) {
   res[, i] <- sample(popu, size = n)
 }
+```
+### 標本抽出
+n=100の標本を100回抽出する。
+```
+n <- 100 #標本の大きさnの指定
+res <- matrix(nrow = n, ncol = 100) #100行✕100列の空の行列を生成
+for (i in 1:100) {
+  res[i,] <- sample(popu, size = n) 標本を100回抽出
+}
+
+res <- data.frame(res) #オブジェクトの型をマトリクスからデータフレームに変更
+res$CI_lower <- NA #最終列にCI_lowerという名前の空の列を新たに作成（推定する区間の下側）
+res$CI_upper <- NA #最終列にCI_upperという名前の空の列を新たに作成（推定する区間の上側）
+
+for (y in 1:nrow(res)) {
+  res$CI_lower[y] <- mean(as.matrix(res[y,1:100])) - qnorm(mean = 0, sd = 1, lower.tail = F, p = 0.025)*(5.97/sqrt(ncol(res[y,1:100]))) #推定する区間の下側を計算
+  res$CI_upper[y] <- mean(as.matrix(res[y,1:100])) + qnorm(mean = 0, sd = 1, lower.tail = F, p = 0.025)*(5.97/sqrt(ncol(res[y,1:100]))) #推定する区間の上側を計算
+}
+
+res$include <- NA #最終列にincludeという名前の空の列を新たに作成（母平均が推定した区間に含まれるかどうかの判定結果を格納する列
+for (g in 1:nrow(res)) {
+  if (res$CI_lower[g] < 170.7 & 170.7 < res$CI_upper[g]) {
+    res$include[g] <- TRUE
+  } else {
+    res$include[g] <- FALSE
+  }
+}
+table(res$include)
 ```
