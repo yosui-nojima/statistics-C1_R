@@ -264,7 +264,7 @@ library(ggplot2) #パッケージの読み込み
 まず平均0、分散1の標準正規分布に従う母集団を生成する。
 ```
 set.seed(xxx)  #乱数を指定（xxxの箇所に学籍番号の下３桁の値を入力すること。例：set.seed(123)）
-num <- rnorm(n = 100000, mean = 0, sd = 1) #標準正規分布に従う乱数を生成
+num <- rnorm(n = 100000, mean = 0, sd = 1) #標準正規分布に従う乱数を生成。
 hist(x = num, breaks = 100)
 ```
 - set.seed; 乱数を指定。これを指定することで```rnorm```関数から毎回同じ乱数を生成させる。
@@ -357,8 +357,9 @@ ggplot(mean.d, aes(x = Mean, y = Probability)) +
 ## 母平均の区間推定（仮想データを使った解析）
 [e-Stat](https://www.e-stat.go.jp/)は、各府省が公表する統計データを一つにまとめ、統計データの検索をはじめとした、さまざまな機能を備えた政府統計のポータルサイト。\
 このデータベースから、学校保健統計調査（小・中・高の生徒の身長・体重などのデータ）のうち、大阪府在住17歳男性の身長の平均・標準偏差（令和3年度集計）を[参考](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032258889&fileKind=0)に仮想データを生成する。
+### 母集団の生成
 ```
 set.seed(xxx)  #乱数を指定（xxxの箇所に学籍番号の下３桁の値を入力すること。例：set.seed(123)）
-popu <- rnorm(100000, mean = 170.7, sd = 5.97) #rnorm : Normal Disribution(正規分布)を作成するコマンド
+popu <- rnorm(100000, mean = 170.7, sd = 5.97) #rnorm : Normal Disribution(正規分布)を作成するコマンド。平均170.7、標準偏差5.97になるように100000人分のデータを正規分布に従うように生成。
 hist(x = popu, breaks=100)
 ```
