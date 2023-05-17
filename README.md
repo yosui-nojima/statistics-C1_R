@@ -245,9 +245,6 @@ Nums[1, 2]   #row 1, column 2
 Nums[2, 1]   #row 2, column 1
 Nums[, 2]    #すべてのrow, column 2
 Nums[2, ]    #row 2, すべてのcolumns
-
-class(Nums)  #型の確認
-str(Nums)
 ```
 ### forループ（一定範囲内での繰り返し操作）
 10行✕1列の空のマトリクスを作成し、n+1(n=1,2,3,,,10)の計算結果を1行ごとに格納していく。
@@ -293,6 +290,7 @@ for (x in 1:10) {
     a[x,2] <- "Incorrect" #if文でFALSEだった場合に実行される部分
   }
 }
+a
 ```
 - matrix; マトリクスを作成ための関数
   - nrow; 行数の指定
