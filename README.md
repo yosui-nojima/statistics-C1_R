@@ -398,7 +398,7 @@ ggplot(mean.d, aes(x = Mean, y = Probability)) +
 
 ## 母平均の区間推定（仮想データを使った解析）
 [e-Stat](https://www.e-stat.go.jp/)は、各府省が公表する統計データを一つにまとめ、統計データの検索をはじめとした、さまざまな機能を備えた政府統計のポータルサイト。\
-このデータベースから、学校保健統計調査（小・中・高の生徒の身長・体重などのデータ）のうち、大阪府在住17歳男性の身長の平均・標準偏差（令和3年度集計）を[参考](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032258889&fileKind=0)に仮想データを生成する。
+このデータベースから、学校保健統計調査（小・中・高の生徒の身長・体重などのデータ）のうち、大阪府17歳男性の身長の平均・標準偏差（令和3年度集計）を[参考](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032258889&fileKind=0)に仮想データを生成する。
 ### 母集団の生成
 平均170.7、標準偏差5.97になるよう100000人分のデータを正規分布に従うように生成。
 ```
@@ -426,15 +426,18 @@ for (i in 1:1000) {
   res[, i] <- sample(popu, size = n)
 }
 ```
-### 抽出した標本それぞれについて区間推定する
+### 抽出した標本それぞれについて信頼係数95%で区間推定する
 ```
 res <- data.frame(res) #オブジェクトの型をマトリクスからデータフレームに変更
 res$CI_lower <- NA #最終列にCI_lowerという名前の空の列を新たに作成（推定する区間の下側を格納する列）
 res$CI_upper <- NA #最終列にCI_upperという名前の空の列を新たに作成（推定する区間の上側を格納する列）
 
+CI <- 0.95 #信頼係数（Confidence interval; CI）の指定
+alpha <- (1- 0.95)/2 #CIから有意水準を計算
+
 for (y in 1:nrow(res)) {
-  res$CI_lower[y] <- mean(as.matrix(res[y,1:100])) - qnorm(mean = 0, sd = 1, lower.tail = F, p = 0.025)*(5.97/sqrt(ncol(res[y,1:100]))) #推定する区間の下側を計算
-  res$CI_upper[y] <- mean(as.matrix(res[y,1:100])) + qnorm(mean = 0, sd = 1, lower.tail = F, p = 0.025)*(5.97/sqrt(ncol(res[y,1:100]))) #推定する区間の上側を計算
+  res$CI_lower[y] <- mean(as.matrix(res[y,1:100])) - qnorm(mean = 0, sd = 1, lower.tail = F, p = alpha/2)*(5.97/sqrt(ncol(res[y,1:100]))) #推定する区間の下側を計算
+  res$CI_upper[y] <- mean(as.matrix(res[y,1:100])) + qnorm(mean = 0, sd = 1, lower.tail = F, p = alpha/2)*(5.97/sqrt(ncol(res[y,1:100]))) #推定する区間の上側を計算
 }
 
 res$include <- NA #最終列にincludeという名前の空の列を新たに作成（母平均が推定した区間に含まれるかどうかの判定結果を格納する列
@@ -448,3 +451,11 @@ for (g in 1:nrow(res)) {
 table(res$include) #TRUE（推定した区間内に母平均が含まれる場合）とFALSE（推定した区間内に母平均が含まれない場合）の数を確認
 ```
 - qnorm; 
+
+## レポート課題
+以下の内容についてレポートを作成し、PDFファイルをCLEより提出すること。
+1. [e-Stat](https://www.e-stat.go.jp/)から任意のデータを選択し、N=100000の母集団を生成する。（大阪府17歳男性の身長データは対象外とする。）
+2. 1.で生成した母集団から大きさn=100の標本を100回抽出し、抽出した標本それぞれについて信頼係数99%で区間推定する。
+3. 母平均が含まれた区間と含まれなかった区間の数を確認する。
+レポートには、実行したコードとその出力結果および出力された図を入れること。\
+**提出期限：2023年5月23日 23:59まで**
