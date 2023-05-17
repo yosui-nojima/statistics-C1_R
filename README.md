@@ -337,7 +337,7 @@ hist(x = num, breaks = 100)
 
 <img width="1187" alt="スクリーンショット 2023-05-17 13 30 16" src="https://github.com/yosui-nojima/statistics-C1_R_2023/assets/85273234/e8e3c552-8fa5-4dad-aff6-c51eaaddf916">
 
-3. 任意の保存先とフォーマットを指定して、```Save```をクリック
+3. 任意の保存先、フォーマット、ファイル名を指定して、```Save```をクリック
 
 <img width="560" alt="スクリーンショット 2023-05-17 13 27 00" src="https://github.com/yosui-nojima/statistics-C1_R_2023/assets/85273234/4cfd11b9-8ff6-4734-87fd-4da8057beeb8">
 
