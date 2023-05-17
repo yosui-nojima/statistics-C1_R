@@ -207,7 +207,7 @@ class(a)         #オブジェクトの型を表示する
 class(fr1)
 class(fruites)
 class(is_apple)
-str(a)           #型と構造、内容の一部を表示する
+str(a)           #型と構造(structure)、内容の一部を表示する
 str(fr1)
 str(fruites)
 str(is_apple)
