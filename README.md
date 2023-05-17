@@ -334,7 +334,7 @@ hist(x = num, breaks = 100)
 2. Save a Imageをクリック
 <img width="1187" alt="スクリーンショット 2023-05-17 13 30 16" src="https://github.com/yosui-nojima/statistics-C1_R_2023/assets/85273234/e8e3c552-8fa5-4dad-aff6-c51eaaddf916">
 3. 任意の保存先とフォーマットを指定して、Saveをクリック\
-<img width="560" alt="スクリーンショット 2023-05-17 13 27 00" src="https://github.com/yosui-nojima/statistics-C1_R_2023/assets/85273234/4cfd11b9-8ff6-4734-87fd-4da8057beeb8">
+<img width="560" alt="スクリーンショット 2023-05-17 13 27 00" src="https://github.com/yosui-nojima/statistics-C1_R_2023/assets/85273234/4cfd11b9-8ff6-4734-87fd-4da8057beeb8">\
 #### a. 標本不偏分散を確認する
 ```
 data <- matrix(nrow = 1000, ncol = 4) #空の行列を生成
