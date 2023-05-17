@@ -170,6 +170,14 @@ sqrt(var(a))    #ベクトル要素の標本不偏標準偏差
 var(a)*((length(a)-1)/length(a))    #ベクトルの要素の標本分散
 sqrt(var(a)*((length(a)-1)/length(a)))    #ベクトルの要素の標本標準偏差
 ```
+### 文字列
+``
+fr1 <- "apple" #文字列
+fr2 <- c("orange", "lemon") #文字列を要素とするベクトル
+fruites <- c(fr1, fr2, fr1) #要素を結合
+fruites #fruitesを表示
+```
+
 ### 論理
 ```
 bool <- c(TRUE, FALSE, F, T)    #論理値
@@ -183,6 +191,9 @@ sum(bool)                       #T/Fは1/0として扱われる
 
 1 < 2              #比較演算（より小さい）
 1 >= 2             #比較演算（より大きいか同じ）
+fr1 == "apple"
+fr2 == c("orange", "lemon")
+fruites <- 
 
 is_apple <- fr1 == "apple"       #比較演算の結果を格納
 is_apple
