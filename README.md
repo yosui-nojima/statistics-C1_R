@@ -336,7 +336,7 @@ for (x in 1:1000) { #標本不偏分散を出力 #mの範囲（m==1,2,3,,,1000)�
   data[x,1] <- var(sample(x = num, size = 3*x)) #n=3のときの標本不偏分散を計算
   data[x,2] <- var(sample(x = num, size = 4*x)) #n=4のときの標本不偏分散を計算
   data[x,3] <- var(sample(x = num, size = 8*x)) #n=8のときの標本不偏分散を計算
-  data[x,4] <- var(sample(x = num, size = 32x))  #n=32のときの標本不偏分散を計算
+  data[x,4] <- var(sample(x = num, size = 32*x))  #n=32のときの標本不偏分散を計算
 }
 colnames(data) <- c("n3", "n4", "n8", "n32") #列名を定義
 data.m <- melt(data) #行列をデータを加工
