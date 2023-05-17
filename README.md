@@ -435,13 +435,13 @@ res$CI_upper <- NA #最終列にCI_upperという名前の空の列を新たに�
 CI <- 0.95 #信頼係数（Confidence interval; CI）の指定
 alpha <- 1- 0.95 #CIから有意水準を計算
 
-for (y in 1:nrow(res)) {
+for (y in 1:n) {
   res$CI_lower[y] <- mean(as.matrix(res[y,1:n])) - qnorm(mean = 0, sd = 1, lower.tail = F, p = alpha/2)*(sigma/sqrt(ncol(res[y,1:n]))) #推定する区間の下側を計算
   res$CI_upper[y] <- mean(as.matrix(res[y,1:n])) + qnorm(mean = 0, sd = 1, lower.tail = F, p = alpha/2)*(sigma/sqrt(ncol(res[y,1:n]))) #推定する区間の上側を計算
 }
 
 res$include <- NA #最終列にincludeという名前の空の列を新たに作成（母平均が推定した区間に含まれるかどうかの判定結果を格納する列
-for (g in 1:nrow(res)) {
+for (g in 1:n) {
   if (res$CI_lower[g] < mu & mu < res$CI_upper[g]) {
     res$include[g] <- TRUE #if文でTRUE（推定した区間内に母平均が含まれる）だった場合に実行される部分
   } else {
