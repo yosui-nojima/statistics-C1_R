@@ -171,7 +171,8 @@ var(a)*((length(a)-1)/length(a))    #ベクトルの要素の標本分散
 sqrt(var(a)*((length(a)-1)/length(a)))    #ベクトルの要素の標本標準偏差
 ```
 ### 文字列
-``
+文字列としてオブジェクトに入力することも可能。
+```
 fr1 <- "apple" #文字列
 fr2 <- c("orange", "lemon") #文字列を要素とするベクトル
 fruites <- c(fr1, fr2, fr1) #要素を結合
