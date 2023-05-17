@@ -22,7 +22,7 @@
 3. 任意のミラーサイトのリンクをクリック
 <img width="1282" alt="スクリーンショット 2023-05-12 17 59 28" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/6ce700c8-3208-4ecf-9b9b-d554208ca33f">
 
-4. 『Download R for Windows』をクリック。※OSがWindowsの場合です。その他のOSの場合は、適切なリンクをクリック。
+4. 『Download R for Windows』をクリック。***※以降のインストール方法はがOSがWindowsの場合です。その他のOSの場合は、適切なリンクをクリック。***
 <img width="1281" alt="スクリーンショット 2023-05-12 17 59 50" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/45d7a416-d118-4976-a01d-28b364377207">
 
 5. 『install R for the first time』をクリック。
@@ -66,7 +66,7 @@ IDEとして、最も一般的なのが『**RStudio**』です。
 
 ## 5. RStudioのインストール
 1. [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)をクリック。
-2. 『DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS』をクリック。
+2. 『DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS』をクリック。***※以降のインストール方法はがOSがWindowsの場合です。その他のOSの場合は、適切なリンクをクリック。***
 <img width="1689" alt="スクリーンショット 2023-05-12 18 06 09" src="https://github.com/yosui-nojima/statistics-C1_R/assets/85273234/1c73a85f-2e90-40d0-b688-72065f49efa7">
 
 3. ダウンロードフォルダにある『RStudio-2023.03.0-386.exe』をダブルクリック。
