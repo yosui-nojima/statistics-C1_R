@@ -402,8 +402,10 @@ ggplot(mean.d, aes(x = Mean, y = Probability)) +
 ### 母集団の生成
 平均170.7、標準偏差5.97になるよう100000人分のデータを正規分布に従うように生成。
 ```
+mu <- 170.7 #母平均の値を指定
+sigma <- 5.97 #母標準偏差を指定
 set.seed(xxx)  #乱数を指定（xxxの箇所に学籍番号の下３桁の値を入力すること。例：set.seed(123)）
-popu <- rnorm(100000, mean = 170.7, sd = 5.97)
+popu <- rnorm(100000, mean = mu, sd = sigma)
 hist(x = popu, breaks=100)
 ```
 - set.seed; 乱数を指定。これを指定することで```rnorm```関数から毎回同じ乱数を生成させる。
