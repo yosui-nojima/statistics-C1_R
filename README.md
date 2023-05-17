@@ -194,7 +194,6 @@ sum(bool)                       #T/Fは1/0として扱われる
 1 >= 2             #比較演算（より大きいか同じ）
 fr1 == "apple"
 fr2 == c("orange", "lemon")
-fruites <- 
 
 is_apple <- fr1 == "apple"       #比較演算の結果を格納
 is_apple
