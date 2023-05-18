@@ -456,7 +456,7 @@ res$CI_lower <- NA #最終列にCI_lowerという名前の空の列を新たに�
 res$CI_upper <- NA #最終列にCI_upperという名前の空の列を新たに作成（推定する区間の上側を格納する列）
 
 CC <- 0.95 #信頼係数（Confidence coefficient; CC）の指定
-alpha <- 1- CC #信頼係数から有意水準を計算
+alpha <- 1 - CC #信頼係数から有意水準を計算
 
 for (y in 1:n) {
   res$CI_lower[y] <- mean(as.matrix(res[y,1:n])) - qnorm(mean = 0, sd = 1, lower.tail = F, p = alpha/2)*(sigma/sqrt(ncol(res[y,1:n]))) #推定する区間の下側を計算
