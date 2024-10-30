@@ -445,8 +445,8 @@ hist(x = popu, breaks=100)
 n=100の標本を100回抽出する。
 ```
 n <- 100
-res <- matrix(NA, nrow = n, ncol = 1000)
-for (i in 1:1000) {
+res <- matrix(NA, nrow = n, ncol = 100)
+for (i in 1:100) {
   res[, i] <- sample(popu, size = n)
 }
 ```
